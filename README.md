@@ -14,4 +14,4 @@ WCT.exe (Simulation mode) (Number of stations) (Delay lambda) > out.csv
 È—ª‚·‚é‚ÆA‚»‚Ì•”•ª‚Ì‚İ“ü—Í‚ğ‹‚ß‚ç‚ê‚é
 
 # License
-MIT License
+[MIT License](/LICENSE.txt)
