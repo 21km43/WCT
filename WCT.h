@@ -12,18 +12,18 @@ void TDMA(const int N, const double LAMBDA);
 static const int SLOT_NUM = 100000; // スロットの数
 
 struct Broadcaster {
-    int delay;		// 遅延時間(スロット単位なので整数値で良い)
+    int delay;		    // 遅延時間(スロット単位なので整数値で良い)
     int fireTime;		// 発火までの残り時間(スロット単位なので整数値で良い)
-    bool isDelaying;	// 現在、遅延状態か
+    bool isDelaying;    // 現在、遅延状態か
 
-    Broadcaster() {
+    inline Broadcaster() {
         delay = 0;
         fireTime = 0;
         isDelaying = false;
     }
 
     // インターバル計算
-    inline double interval(double random, double lambda) {
+    inline double interval(const double random, const double lambda) {
         return((-1.0 / lambda) * log(random)) + 1.0;
     }
 

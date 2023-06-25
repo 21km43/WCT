@@ -54,16 +54,3 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-
-/*
-
-Presentation
-無線通信の未来
-1. 未来の無線通信の展望
-2. 無線通信の技術展望
-3. その他
-
-発表時間　5~10分 Powerpoint
-日付　7/17, 24
-
-*/

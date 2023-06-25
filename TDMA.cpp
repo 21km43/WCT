@@ -24,7 +24,7 @@ void TDMA(const int N, const double LAMBDA) {
                 } else {
                     success++;	// è’ìÀÇÕãNÇ±ÇËÇ¶Ç»Ç¢
                     delay += broadcaster[index].delay;
-                    broadcaster[index].setInterval(LAMBDA);	// íxâÑèÛë‘Ç≈Ç»Ç≠Ç»ÇÈÇ±Ç∆Ç…íçà”
+                    broadcaster[index].setInterval(LAMBDA);	// íxâÑèÛë‘Ç≈Ç»Ç≠Ç»ÇÈ
                 }
             }
         }

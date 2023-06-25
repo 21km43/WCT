@@ -39,6 +39,7 @@ void ALOHA(const int N, const double LAMBDA, const double DELAY_LAMBDA) {
                 }
             }
         }
+
         if (fired == 1) {
             // è’ìÀÇµÇƒÇ»Ç¢ÇÃÇ≈OK
             success++;
