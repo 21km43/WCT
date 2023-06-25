@@ -1,17 +1,21 @@
 # WCT
-Slotted ALOHA��TDMA�̃V�~�����[�V�����v���O����
+Slotted ALOHAとTDMAのシミュレーションプログラム
 
-Visual Studio 2022�ŊJ���iOS�ˑ��̃��C�u�����͎g�p���Ă��Ȃ��j
+Visual Studio 2022で開発した。OS依存のライブラリは使用していないため、g++があれば、
+```
+g++ -O2 -o WCT WCT.cpp ALOHA.cpp TDMA.cpp
+```
+でコンパイルできる。（最適化しないと時間がかかるので注意）
 
 # Usgae
-���̂܂܎��s���Ă�OK�B�ǂ̂悤�ȃV�~�����[�V�������@�Ŏ��s���邩�A�ǐ��͂������A�K�v�ł���Βx�����̍đ�������͂���Əo�͂����B
-�X���b�g�̐��A�e�ǂ̑��M���͈̔͂�ς������ꍇ�̓\�[�X�R�[�h�����ς��čēx�R���p�C�����邱�ƁB
+そのまま実行してもOK。どのようなシミュレーション方法で実行するか、局数はいくつか、必要であれば遅延時の再送率を入力すると出力される。
+スロットの数、各局の送信率の範囲を変えたい場合はソースコードを改変して再度コンパイルすること。
 
-���s�������ł����̃p�����[�^���w�肷�邱�Ƃ��\�Bcsv�Ƃ��ďo�͂������ꍇ�́A���̂悤�ɂ���Ηǂ��i���s�t�@�C������WCT��Windows�Ŏ��s����ꍇ�j
+実行時引数でこれらのパラメータを指定することも可能。csvとして出力したい場合は、次のようにすれば良い（実行ファイル名がWCTでWindowsで実行する場合）
 ```
 WCT.exe (Simulation mode) (Number of stations) (Delay lambda) > out.csv
 ```
-�ȗ�����ƁA���̕����̂ݓ��͂����߂���
+省略すると、その部分のみ入力を求められる
 
 # License
 [MIT License](/LICENSE.txt)
